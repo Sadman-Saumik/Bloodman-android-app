@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DonorProfile">
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text="Your Profile :"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="43dp"
+        android:layout_below="@+id/textView6"
+        android:layout_alignParentStart="true"
+        android:text="ID:"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/ProfileIdText"
+        android:layout_width="250dp"
+        android:layout_height="46dp"
+        android:layout_below="@+id/textView6"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="0dp"
+        android:layout_toEndOf="@+id/textView7"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/ProfileNameText"
+        android:layout_width="258dp"
+        android:layout_height="46dp"
+        android:layout_below="@+id/ProfileIdText"
+        android:layout_marginStart="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="3dp"
+        android:layout_toEndOf="@+id/textView9"
+        android:layout_toRightOf="@+id/textView9"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/ProfileEmailText"
+        android:layout_width="258dp"
+        android:layout_height="46dp"
+        android:layout_below="@+id/ProfileNameText"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="101dp"
+        android:layout_marginLeft="101dp"
+        android:layout_marginTop="3dp"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/ProfilePhoneText"
+        android:layout_width="256dp"
+        android:layout_height="46dp"
+        android:layout_below="@+id/ProfileEmailText"
+        android:layout_marginStart="1dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="2dp"
+        android:layout_toEndOf="@+id/textView14"
+        android:layout_toRightOf="@+id/textView14"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="133dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/ProfilePhoneText"
+        android:layout_alignParentStart="true"
+        android:text="BloodType"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="186dp"
+        android:layout_height="46dp"
+        android:layout_below="@+id/ProfilePhoneText"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="0dp"
+        android:text="Location"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/ProfileBTypeText"
+        android:layout_width="133dp"
+        android:layout_height="46dp"
+        android:layout_below="@+id/textView13"
+        android:layout_alignParentStart="true"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/ProfileLocationText"
+        android:layout_width="186dp"
+        android:layout_height="46dp"
+        android:layout_below="@+id/textView12"
+        android:layout_alignStart="@+id/textView13"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/ProfileLogoutButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp"
+        android:text="Log out"
+        android:textAllCaps="false"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="133dp"
+        android:layout_height="46dp"
+        android:layout_below="@+id/ProfileBTypeText"
+        android:layout_alignParentStart="true"
+        android:text="Available:"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/ProfileAvailSpinner"
+        android:layout_width="130dp"
+        android:layout_height="47dp"
+        android:layout_below="@+id/ProfileLocationText"
+        android:layout_marginStart="6dp"
+        android:layout_marginLeft="6dp"
+        android:layout_toEndOf="@+id/textView8"
+        android:layout_toRightOf="@+id/textView8" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="99dp"
+        android:layout_height="46dp"
+        android:layout_below="@+id/ProfileIdText"
+        android:layout_alignParentStart="true"
+        android:text="Name:"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="99dp"
+        android:layout_height="46dp"
+        android:layout_alignTop="@+id/ProfileEmailText"
+        android:layout_alignParentStart="true"
+        android:text="Email:"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="100dp"
+        android:layout_height="46dp"
+        android:layout_below="@+id/ProfileEmailText"
+        android:layout_alignParentStart="true"
+        android:text="Phone:"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/ProfileSaveButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ProfileLogoutButton"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="0dp"
+        android:text="Save"
+        android:textAllCaps="false"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+</RelativeLayout>

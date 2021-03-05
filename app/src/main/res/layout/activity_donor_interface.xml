@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DonorInterface">
+
+    <EditText
+        android:id="@+id/DonorEmailText"
+        android:layout_width="match_parent"
+        android:layout_height="61dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="103dp"
+        android:ems="10"
+        android:hint="E-mail"
+        android:inputType="textPersonName"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/DonorPassText"
+        android:layout_width="match_parent"
+        android:layout_height="61dp"
+        android:layout_below="@+id/DonorEmailText"
+        android:layout_alignParentStart="true"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/DonorLoginButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/DonorPassText"
+        android:layout_alignParentStart="true"
+        android:text="Log in"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/DonorRegistrationButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/DonorLoginButton"
+        android:layout_alignParentStart="true"
+        android:text="Registration"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/DonorBackButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/DonorRegistrationButton"
+        android:layout_alignParentStart="true"
+        android:text="Back"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

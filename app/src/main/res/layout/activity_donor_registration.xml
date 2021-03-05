@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DonorRegistration">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="39dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text="Registration"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/RegistrationNameText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentStart="true"
+        android:ems="10"
+        android:hint="Full Name"
+        android:inputType="textPersonName"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/RegistrationEmailText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/RegistrationNameText"
+        android:layout_alignParentStart="true"
+        android:ems="10"
+        android:hint="E-Mail"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/RegistrationPhoneText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/RegistrationEmailText"
+        android:layout_alignParentStart="true"
+        android:ems="10"
+        android:hint="Phone No."
+        android:inputType="phone" />
+
+    <TextView
+        android:id="@+id/RegistrationBloodText"
+        android:layout_width="103dp"
+        android:layout_height="36dp"
+        android:layout_above="@+id/textView3"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="180dp"
+        android:layout_marginBottom="30dp"
+        android:text="Blood Type :"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/RegistrationBloodCombo"
+        android:layout_width="141dp"
+        android:layout_height="34dp"
+        android:layout_alignTop="@+id/RegistrationBloodText"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="115dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="103dp"
+        android:layout_height="36dp"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:text="Location :"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/RegistrationLocationCombo"
+        android:layout_width="141dp"
+        android:layout_height="34dp"
+        android:layout_alignTop="@+id/textView3"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="114dp"
+        android:layout_marginTop="0dp" />
+
+    <EditText
+        android:id="@+id/RegistrationPassText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="176dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/RegistrationRepassText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/RegistrationPassText"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="-176dp"
+        android:ems="10"
+        android:hint="Re-type Pass."
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/RegistrationRegiButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="56dp"
+        android:text="Register"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
